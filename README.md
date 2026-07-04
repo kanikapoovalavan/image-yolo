@@ -88,8 +88,8 @@ The output image contains:
 Example console output:
 
 ```text
-dog confidence: 0.98
-person confidence: 0.95
+dog confidence: 0.86
+car confidence: 0.95
 ```
 
 ## Requirements
