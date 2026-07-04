@@ -1,43 +1,92 @@
 # Object Detection using YOLOv8 in Image and Video
 
-This project demonstrates  **object detection** in images and videos using the **YOLOv8 (You Only Look Once)** model from the **Ultralytics** library. The goal is to analyze and detect objects in images and videos with high accuracy and real-time performance.
+This project demonstrates **object detection** in images and videos using the **YOLOv8 (You Only Look Once)** model from the **Ultralytics** library. The model detects objects with high accuracy and displays bounding boxes, class labels, and confidence scores.
 
 ## Project Objectives
 
-- Detect objects in an image using **YOLOv8x**, a state-of-the-art object detection model.
+- Detect objects in images using YOLOv8.
+- Detect objects in videos frame by frame.
 - Display bounding boxes, object labels, and confidence scores.
-- Optionally classify an image or analyze detected objects programmatically.
+- Save the processed output image.
 
 ## Tech Stack
 
-- **Python 3.8+**
-- **Ultralytics YOLOv8** (`pip install ultralytics`)
-- **OpenCV** (for image handling)
-- **PyTorch** (installed automatically with Ultralytics)
+- Python 3.8+
+- Ultralytics YOLOv8
+- OpenCV
+- PyTorch
 
-## File Structure
-      proj.py
-      img.jpeg
-      output.jpeg
-      provideo.py
-      video.mp4
+## Project Structure
 
-### Installation
-# Install dependencies
-pip install ultralytics opencv-python
-### Example Output
+```text
+.
+├── README.md
+├── proj.py
+├── provideo.py
+├── requirements.txt
+├── output.jpg      # Generated after running proj.py
+└── output.mp4      # Generated after running provideo.py
+```
 
-After running, an `output.jpg` file is created with:
-- Detected objects highlighted
-- Class names and confidence scores shown on the image
+## Installation
 
-Console output:
-dog confidence:0.98 
-person confidence:0.95  
-## requirements.txt
+Clone the repository:
 
-ultralytics
-opencv-python
+```bash
+git clone https://github.com/<your-username>/<your-repository-name>.git
+cd <your-repository-name>
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+## How to Run
+
+### Image Object Detection
+
+1. Open `proj.py`.
+2. Update the image path if required.
+3. Run:
+
+```bash
+python proj.py
+```
+
+The detected image will be saved as **output.jpg**.
+
+### Video Object Detection
+
+1. Open `provideo.py`.
+2. Update the video path if required.
+3. Run:
+
+```bash
+python provideo.py
+```
+
+The video will be processed and displayed or saved depending on the implementation.
+
+## Example Output
+
+The output image contains:
+
+- Bounding boxes around detected objects
+- Object class names
+- Confidence scores
+
+Example console output:
+
+```text
+dog confidence: 0.98
+person confidence: 0.95
+```
+
+## Requirements
+
+The required Python packages are listed in `requirements.txt`.
 
 ## Author
 
