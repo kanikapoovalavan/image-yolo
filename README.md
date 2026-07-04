@@ -20,12 +20,20 @@ This project demonstrates **object detection** in images and videos using the **
 
 ```text
 .
+## Project Structure
+
+```text
+.
 ├── README.md
-├── proj.py
-├── provideo.py
+├── .gitignore
 ├── requirements.txt
-├── output.jpg      # Generated after running proj.py
-└── output.mp4      # Generated after running provideo.py
+├── proj.py                 # Image object detection
+├── provideo.py             # Video object detection
+├── goldenretriver.jpg      # Sample input image
+├── video_traffic.mp4       # Sample input video
+├── output.jpg              # Generated output image
+└── output.mp4              # Generated output video
+```
 ```
 
 ## Installation
