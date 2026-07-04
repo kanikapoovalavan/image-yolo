@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 model = YOLO("yolov8x.pt")
-image_file = "Golden-Retriever.webp"
+image_file = "goldenretriver.jpg"
 results = model(image_file)
 results[0].save(filename="output.jpg")
 print("Detection complete! Check 'output.jpg'")

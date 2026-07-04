@@ -5,7 +5,7 @@ import cv2
 model = YOLO("yolov8n.pt")
 
 # Open input video
-cap = cv2.VideoCapture("video.mp4")
+cap = cv2.VideoCapture("video_traffic.mp4")
 
 if not cap.isOpened():
     print("Error: Unable to open video file.")
